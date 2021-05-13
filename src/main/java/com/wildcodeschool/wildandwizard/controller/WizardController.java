@@ -13,7 +13,7 @@ public class WizardController {
 
     @GetMapping("/wizards")
     public String getAll(Model model) {
-
+    
         model.addAttribute("wizards", repository.findAll());
 
         return "wizard_get_all";
